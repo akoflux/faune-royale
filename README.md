@@ -198,7 +198,7 @@
 #### 1️⃣ Cloner le repository
 
 ```bash
-git clone https://github.com/akoflux/zoo-paradis.git
+git clone https://github.com/akoflux/faune-royale.git
 cd zoo-paradis
 ```
 
@@ -206,20 +206,20 @@ cd zoo-paradis
 
 ```bash
 # Sous Windows (XAMPP)
-Copier le dossier dans: C:\xampp\htdocs\ProjetZoo
+Copier le dossier dans: C:\xampp\htdocs\faune-royale
 
 # Sous Linux/Mac
-Copier le dossier dans: /opt/lampp/htdocs/ProjetZoo
+Copier le dossier dans: /opt/lampp/htdocs/faune-royale
 ```
 
 #### 3️⃣ Créer la base de données
 
 1. Démarrer **Apache** et **MySQL** depuis XAMPP Control Panel
 2. Ouvrir **phpMyAdmin** : [http://localhost/phpmyadmin](http://localhost/phpmyadmin)
-3. Créer une nouvelle base de données nommée `zoo_paradis`
+3. Créer une nouvelle base de données nommée `zoo`
 4. Importer le fichier SQL :
    - Cliquer sur "Importer"
-   - Sélectionner `database/zoo_paradis.sql`
+   - Sélectionner `database/zoo.sql`
    - Cliquer sur "Exécuter"
 
 #### 4️⃣ Configurer la connexion
@@ -231,7 +231,7 @@ Modifier le fichier `connexion.php` si nécessaire :
 $servername = "localhost";
 $username = "root";
 $password = "";  // Mot de passe MySQL (vide par défaut sur XAMPP)
-$dbname = "zoo_paradis";
+$dbname = "zoo";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 ?>
@@ -241,7 +241,7 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 Ouvrir votre navigateur et aller sur :
 ```
-http://localhost/ProjetZoo/
+http://localhost/faune-royale/
 ```
 
 ---
@@ -318,7 +318,7 @@ ProjetZoo/
 │
 ├── 📁 Images/                       # Ressources images
 ├── 📁 database/                     # Scripts SQL
-│   └── zoo_paradis.sql              # Structure + données
+│   └── zoo.sql                       # Structure + données
 │
 └── 📄 README.md                     # Ce fichier
 ```
@@ -498,18 +498,6 @@ require_role(['Veterinaire', 'Employe', 'Chef_Equipe'], "Message d'erreur");
 
 ---
 
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! Pour contribuer :
-
-1. Fork le projet
-2. Créer une branche (`git checkout -b feature/nouvelle-fonctionnalite`)
-3. Commit les changements (`git commit -m 'Ajout nouvelle fonctionnalité'`)
-4. Push vers la branche (`git push origin feature/nouvelle-fonctionnalite`)
-5. Ouvrir une Pull Request
-
----
-
 ## 📝 License
 
 Ce projet est sous licence **MIT** - voir le fichier [LICENSE](LICENSE) pour plus de détails.
@@ -517,7 +505,7 @@ Ce projet est sous licence **MIT** - voir le fichier [LICENSE](LICENSE) pour plu
 ```
 MIT License
 
-Copyright (c) 2024 akoflux
+Copyright (c) 2025-2026 akoflux
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -540,7 +528,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 **Développeur** : akoflux
 **GitHub** : [@akoflux](https://github.com/akoflux)
-**Projet** : [Zoo Paradis](https://github.com/akoflux/faune-royale)
+**Projet** : [Faune Royale](https://github.com/akoflux/faune-royale)
 
 ---
 
@@ -567,7 +555,8 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 ---
 
-**Zoo Paradis** © 2024 | Version 1.0.0
+**Faune Royale** © 2025-2026 | Version 1.0.0
 
 </div>
+
 
