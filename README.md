@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🦁 Zoo Paradis - Système de Gestion Futuriste
+# 🦁 Faune Royale - Système de Gestion Futuriste
 
 ![Version](https://img.shields.io/badge/version-1.0.0-00d4ff?style=for-the-badge)
 ![PHP](https://img.shields.io/badge/PHP-8.0+-7b2cbf?style=for-the-badge&logo=php)
@@ -143,7 +143,7 @@
 *Vue d'ensemble des réservations*
 
 ### 🎫 Réservations clients
-![Réservations](docs/screenshots/reservations.png)
+![Réservations](docs/screenshots/reservation.png)
 *Interface de réservation intuitive avec sélection de forfaits*
 
 ### 👤 Espace client
@@ -570,3 +570,4 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 **Zoo Paradis** © 2024 | Version 1.0.0
 
 </div>
+
