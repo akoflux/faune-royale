@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🦁 Zoo Paradis - Système de Gestion Futuriste
+# 🦁 Faune Royale - Système de Gestion Futuriste
 
 ![Version](https://img.shields.io/badge/version-1.0.0-00d4ff?style=for-the-badge)
 ![PHP](https://img.shields.io/badge/PHP-8.0+-7b2cbf?style=for-the-badge&logo=php)
