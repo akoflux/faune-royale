@@ -16,7 +16,7 @@
 **Une application web moderne de gestion de zoo avec système multi-rôles**
 *Architecture client léger • Design futuriste • Sécurité renforcée*
 
-[📸 Voir les captures](#-captures-décran) • [🚀 Installation](#-installation) • [📖 Documentation](#-documentation) • [🔒 Sécurité](#-sécurité)
+[🚀 Installation](#-installation) • [📖 Documentation](#-documentation) • [🔒 Sécurité](#-sécurité)
 
 </div>
 
@@ -106,51 +106,6 @@
 
 ---
 
-## 🎨 Captures d'écran
-
-> 💡 **Note**: Placez vos captures d'écran dans le dossier `docs/screenshots/`
-
-### 🏠 Page d'accueil
-![Accueil](docs/screenshots/home.png)
-*Interface d'accueil moderne avec animations futuristes*
-
-### 🔐 Connexion & Inscription
-![Connexion](docs/screenshots/login.png)
-*Système d'authentification sécurisé avec validation en temps réel*
-
-### 📊 Dashboard Direction
-![Dashboard Direction](docs/screenshots/dashboard-direction.png)
-*Vue complète pour le directeur avec toutes les statistiques*
-
-### 🦁 Gestion des animaux
-![Gestion Animaux](docs/screenshots/animaux.png)
-*Interface de gestion des animaux avec filtres et recherche*
-
-### 🧬 Gestion des espèces
-![Gestion Espèces](docs/screenshots/especes.png)
-*Création et modification d'espèces avec validation*
-
-### 🏠 Gestion des enclos
-![Gestion Enclos](docs/screenshots/enclos.png)
-*Vue d'ensemble des enclos avec affichage dynamique*
-
-### 🎓 Gestion Utilisateurs
-![Gestion Utilisateur](docs/screenshots/users.png)
-*Vue d'ensemble des utilisateurs*
-
-### 📋 Gestion Réservation
-![Gestion Utilisateur](docs/screenshots/resa-dir.png)
-*Vue d'ensemble des réservations*
-
-### 🎫 Réservations clients
-![Réservations](docs/screenshots/reservations.png)
-*Interface de réservation intuitive avec sélection de forfaits*
-
-### 👤 Espace client
-![Espace Client](docs/screenshots/client-dashboard.png)
-*Dashboard client avec suivi des réservations*
-
----
 
 ## 🛠️ Technologies utilisées
 
