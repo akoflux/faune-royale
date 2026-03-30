@@ -499,7 +499,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 **Développeur** : akoflux
 **GitHub** : [@akoflux](https://github.com/akoflux)
-**Projet** : [Zoo Paradis](https://github.com/akoflux/faune-royale)
+**Projet** : [Faune Royale](https://github.com/akoflux/faune-royale)
 
 ---
 
@@ -526,6 +526,6 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 ---
 
-**Zoo Paradis** © 2024 | Version 1.0.0
+**Faune Royale** © 2026 | Version 1.0.0
 
 </div>
