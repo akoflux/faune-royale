@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Zoo Paradis</title>
+    <link rel="stylesheet" href="../global-nature-zoo.css?v=2">
+    <link rel="stylesheet" href="../Connexion/auth-nature.css?v=2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <div class="icon">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <h1>Créer un compte</h1>
+                <p>Inscrivez-vous pour réserver vos billets</p>
+            </div>
+
+            <form action="inscription.php" method="POST" id="signupForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nom">
+                            <i class="fas fa-user"></i>
+                            Nom
+                        </label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom" required minlength="2">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prenom">
+                            <i class="fas fa-user"></i>
+                            Prénom
+                        </label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required minlength="2">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i>
+                        Adresse email
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="votre.email@exemple.fr" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telephone">
+                        <i class="fas fa-phone"></i>
+                        Téléphone
+                    </label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="0612345678" pattern="[0-9]{10}" required>
+                    <small>Format: 10 chiffres sans espaces</small>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">
+                            <i class="fas fa-lock"></i>
+                            Mot de passe
+                        </label>
+                        <input type="password" id="password" name="mdp" placeholder="Min. 8 caractères" required minlength="8">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm_password">
+                            <i class="fas fa-lock"></i>
+                            Confirmation
+                        </label>
+                        <input type="password" id="confirm_password" name="confirm_mdp" placeholder="Confirmez" required minlength="8">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    <i class="fas fa-check-circle"></i>
+                    Créer mon compte
+                </button>
+            </form>
+
+            <div class="divider">
+                <span>ou</span>
+            </div>
+
+            <div class="auth-footer">
+                <p>Vous avez déjà un compte ?</p>
+                <a href="../Connexion/connexion.html">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Se connecter
+                </a>
+
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <a href="../index.html" class="back-link">
+                        <i class="fas fa-arrow-left"></i>
+                        Retour à l'accueil
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            const nom = document.getElementById('nom').value.trim();
+            const prenom = document.getElementById('prenom').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const telephone = document.getElementById('telephone').value.trim();
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm_password').value;
+
+            if (nom.length < 2) {
+                e.preventDefault();
+                alert("Le nom doit contenir au moins 2 caractères");
+                return false;
+            }
+
+            if (prenom.length < 2) {
+                e.preventDefault();
+                alert("Le prénom doit contenir au moins 2 caractères");
+                return false;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                e.preventDefault();
+                alert("Veuillez entrer une adresse email valide");
+                return false;
+            }
+
+            const phoneRegex = /^[0-9]{10}$/;
+            if (!phoneRegex.test(telephone)) {
+                e.preventDefault();
+                alert("Le téléphone doit contenir exactement 10 chiffres");
+                return false;
+            }
+
+            if (password.length < 8) {
+                e.preventDefault();
+                alert("Le mot de passe doit contenir au moins 8 caractères");
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                e.preventDefault();
+                alert("Les mots de passe ne correspondent pas");
+                return false;
+            }
+        });
+    </script>
+</body>
+</html>

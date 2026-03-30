@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Zoo Paradis</title>
+    <link rel="stylesheet" href="../global-nature-zoo.css?v=2">
+    <link rel="stylesheet" href="auth-nature.css?v=2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <div class="icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h1>Connexion</h1>
+                <p>Connectez-vous à votre espace Zoo Paradis</p>
+            </div>
+
+            <form action="logs.php" method="POST" id="loginForm">
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i>
+                        Adresse email
+                    </label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="votre.email@exemple.fr"
+                        required
+                        autocomplete="email"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fas fa-key"></i>
+                        Mot de passe
+                    </label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Entrez votre mot de passe"
+                        required
+                        autocomplete="current-password"
+                    >
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Se connecter
+                </button>
+            </form>
+
+            <div class="divider">
+                <span>ou</span>
+            </div>
+
+            <div class="auth-footer">
+                <p>Vous n'avez pas encore de compte ?</p>
+                <a href="../Inscription/inscription.html">
+                    <i class="fas fa-user-plus"></i>
+                    Créer un compte client
+                </a>
+
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <a href="../index.html" class="back-link">
+                        <i class="fas fa-arrow-left"></i>
+                        Retour à l'accueil
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value;
+
+            if (!email || !password) {
+                e.preventDefault();
+                alert('Veuillez remplir tous les champs');
+                return false;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                e.preventDefault();
+                alert('Veuillez entrer une adresse email valide');
+                return false;
+            }
+        });
+    </script>
+</body>
+</html>

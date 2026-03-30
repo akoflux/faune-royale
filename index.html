@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faune Royal - Découvrez la Magie de la Savane</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global-nature-zoo.css">
+    <link rel="stylesheet" href="index-nature.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./Images/logo_zoo.png" alt="Logo Faune Royal">
+                <span>Faune Royal</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#forfaits">Forfaits</a></li>
+                <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="#infos">Infos pratiques</a></li>
+                <li><a href="./Connexion/connexion.html">Connexion</a></li>
+                <li><a href="./Reservation/reservation.php" class="btn-nav"><i class="fas fa-calendar-check"></i> Réserver</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>
+                    Découvrez la Magie
+                    <span class="highlight">de la Savane</span>
+                </h1>
+                <p>
+                    Plongez au cœur de la faune sauvage et vivez une expérience inoubliable au Faune Royal.
+                    Plus de 500 animaux majestueux vous attendent, principalement issus de la savane africaine,
+                    mais aussi des merveilles aquatiques qui émerveilleront petits et grands.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="number">500+</div>
+                        <div class="label">Animaux</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number">50+</div>
+                        <div class="label">Espèces</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number">9h-18h</div>
+                        <div class="label">Ouverture</div>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="./Reservation/reservation.php" class="btn-primary">
+                        <i class="fas fa-ticket-alt"></i>
+                        Réserver maintenant
+                    </a>
+                    <button class="btn-secondary" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fas fa-info-circle"></i>
+                        En savoir plus
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-image-container">
+                    <img src="./Images/enfant_avec_girafe.jpg" alt="Enfant avec girafe au Faune Royal">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="section-title scroll-animation">
+                <h2>Pourquoi visiter le Faune Royal ?</h2>
+                <p>Une expérience unique au cœur de la nature sauvage</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card scroll-animation">
+                    <i class="fas fa-globe-africa"></i>
+                    <h3>Faune de la Savane</h3>
+                    <p>
+                        Découvrez les majestueux lions, élégantes girafes, puissants éléphants et bien d'autres
+                        animaux emblématiques de la savane africaine dans des environnements recréés avec soin.
+                    </p>
+                </div>
+
+                <div class="about-card scroll-animation">
+                    <i class="fas fa-water"></i>
+                    <h3>Monde Aquatique</h3>
+                    <p>
+                        Explorez notre espace aquatique et admirez des espèces marines fascinantes,
+                        des poissons tropicaux colorés aux impressionnants requins.
+                    </p>
+                </div>
+
+                <div class="about-card scroll-animation">
+                    <i class="fas fa-users"></i>
+                    <h3>Visites Guidées</h3>
+                    <p>
+                        Profitez de visites guidées par nos experts passionnés qui vous feront découvrir
+                        les secrets et comportements fascinants de nos pensionnaires.
+                    </p>
+                </div>
+
+                <div class="about-card scroll-animation">
+                    <i class="fas fa-child"></i>
+                    <h3>Activités Famille</h3>
+                    <p>
+                        Des activités ludiques et éducatives pour toute la famille : ateliers pédagogiques,
+                        spectacles animaliers et zones de jeux pour les enfants.
+                    </p>
+                </div>
+
+                <div class="about-card scroll-animation">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Écologie & Conservation</h3>
+                    <p>
+                        Engagés dans la protection des espèces menacées, nous participons activement
+                        à des programmes de conservation et de sensibilisation.
+                    </p>
+                </div>
+
+                <div class="about-card scroll-animation">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Restauration & Boutique</h3>
+                    <p>
+                        Plusieurs points de restauration et boutiques souvenirs pour rendre votre visite
+                        encore plus agréable et mémorable.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section" id="galerie">
+        <div class="carousel-container">
+            <div class="section-title scroll-animation">
+                <h2>Découvrez Nos Animaux</h2>
+                <p>Une immersion au cœur de la faune sauvage</p>
+            </div>
+
+            <div class="carousel">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide">
+                        <img src="./Images/lion.jpg" alt="Lion majestueux">
+                        <div class="carousel-caption">
+                            <h3>Le Roi de la Savane</h3>
+                            <p>Admirez la majesté de nos lions dans un habitat recréé avec soin</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./Images/tigre_rocher.jpeg" alt="Tigre sur rocher">
+                        <div class="carousel-caption">
+                            <h3>Le Tigre Majestueux</h3>
+                            <p>Observez la puissance et l'élégance de ces félins extraordinaires</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./Images/crocodille.jpg" alt="Crocodile">
+                        <div class="carousel-caption">
+                            <h3>Le Monde Aquatique</h3>
+                            <p>Découvrez nos impressionnants reptiles aquatiques</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./Images/panda.jpg" alt="Panda">
+                        <div class="carousel-caption">
+                            <h3>Le Panda Géant</h3>
+                            <p>Rencontrez nos adorables pandas dans leur environnement naturel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-nav prev" onclick="moveCarousel(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-nav next" onclick="moveCarousel(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="carousel-indicators">
+                    <span class="carousel-indicator active" onclick="goToSlide(0)"></span>
+                    <span class="carousel-indicator" onclick="goToSlide(1)"></span>
+                    <span class="carousel-indicator" onclick="goToSlide(2)"></span>
+                    <span class="carousel-indicator" onclick="goToSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forfaits Section -->
+    <section class="forfaits" id="forfaits">
+        <div class="forfaits-container">
+            <div class="section-title scroll-animation">
+                <h2>Nos Forfaits</h2>
+                <p>Choisissez la formule qui vous convient</p>
+            </div>
+
+            <div class="forfaits-grid">
+                <!-- Demi-journée -->
+                <div class="forfait-card scroll-slide-left">
+                    <div class="forfait-icon">☀️</div>
+                    <h3>Demi-journée</h3>
+                    <p class="description">Arrivée à 13h</p>
+
+                    <div class="forfait-price">
+                        <div class="price-row">
+                            <span class="label">Adulte</span>
+                            <span class="price">15,00€</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="label">Enfant</span>
+                            <span class="price">8,00€</span>
+                        </div>
+                    </div>
+
+                    <ul class="forfait-features">
+                        <li><i class="fas fa-check-circle"></i> Accès à tous les enclos</li>
+                        <li><i class="fas fa-check-circle"></i> Spectacle des otaries (15h)</li>
+                        <li><i class="fas fa-check-circle"></i> Aire de jeux</li>
+                    </ul>
+
+                    <a href="./Reservation/reservation.php" class="btn-primary" style="width: 100%; justify-content: center;">
+                        <i class="fas fa-shopping-cart"></i>
+                        Réserver
+                    </a>
+                </div>
+
+                <!-- 1 Jour - POPULAIRE -->
+                <div class="forfait-card populaire scroll-animation">
+                    <div class="forfait-icon">🕐</div>
+                    <h3>1 Jour</h3>
+                    <p class="description">9h - 18h</p>
+
+                    <div class="forfait-price">
+                        <div class="price-row">
+                            <span class="label">Adulte</span>
+                            <span class="price">25,00€</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="label">Enfant</span>
+                            <span class="price">12,00€</span>
+                        </div>
+                    </div>
+
+                    <ul class="forfait-features">
+                        <li><i class="fas fa-check-circle"></i> Accès à tous les enclos</li>
+                        <li><i class="fas fa-check-circle"></i> Tous les spectacles</li>
+                        <li><i class="fas fa-check-circle"></i> Visite guidée (optionnelle)</li>
+                        <li><i class="fas fa-check-circle"></i> Aire de jeux</li>
+                    </ul>
+
+                    <a href="./Reservation/reservation.php" class="btn-primary" style="width: 100%; justify-content: center;">
+                        <i class="fas fa-shopping-cart"></i>
+                        Réserver
+                    </a>
+                </div>
+
+                <!-- 2 Jours + 1 Nuit -->
+                <div class="forfait-card scroll-slide-right">
+                    <div class="forfait-icon">🌙</div>
+                    <h3>2 Jours + 1 Nuit</h3>
+                    <p class="description">Hébergement inclus</p>
+
+                    <div class="forfait-price">
+                        <div class="price-row">
+                            <span class="label">Adulte</span>
+                            <span class="price">89,00€</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="label">Enfant</span>
+                            <span class="price">49,00€</span>
+                        </div>
+                    </div>
+
+                    <ul class="forfait-features">
+                        <li><i class="fas fa-check-circle"></i> 2 jours d'accès complet</li>
+                        <li><i class="fas fa-check-circle"></i> Hébergement sur place</li>
+                        <li><i class="fas fa-check-circle"></i> Petit-déjeuner inclus</li>
+                        <li><i class="fas fa-check-circle"></i> Visite nocturne exclusive</li>
+                        <li><i class="fas fa-check-circle"></i> Tous les spectacles</li>
+                    </ul>
+
+                    <a href="./Reservation/reservation.php" class="btn-primary" style="width: 100%; justify-content: center;">
+                        <i class="fas fa-shopping-cart"></i>
+                        Réserver
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages Section - Carrousel -->
+    <section class="testimonials" id="temoignages">
+        <div class="testimonials-container">
+            <div class="section-title scroll-animation">
+                <h2>Ce que disent nos visiteurs</h2>
+                <p>Des milliers de familles satisfaites</p>
+            </div>
+
+            <div class="testimonials-carousel-wrapper">
+                <div class="testimonials-carousel" id="testimonialsCarousel">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-card-carousel">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">SF</div>
+                                <div class="testimonial-info">
+                                    <h4>Sophie & Famille</h4>
+                                    <div class="testimonial-date">Visité en Janvier 2026</div>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Une expérience magique ! Les enfants étaient émerveillés de voir les lions de si près.
+                                Les enclos sont spacieux et bien entretenus. Le personnel est très accueillant et
+                                passionné. Nous avons passé une journée inoubliable !
+                            </p>
+                            <span class="testimonial-tag">Forfait 1 Jour</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card-carousel">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">ML</div>
+                                <div class="testimonial-info">
+                                    <h4>Marc Legrand</h4>
+                                    <div class="testimonial-date">Visité en Décembre 2025</div>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Le forfait 2 jours avec nuitée est extraordinaire ! La visite nocturne est unique,
+                                on entend les rugissements des fauves dans la nuit. L'hébergement est confortable
+                                et le petit-déjeuner copieux. Une aventure à vivre absolument !
+                            </p>
+                            <span class="testimonial-tag">Forfait 2 Jours + 1 Nuit</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card-carousel">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">CD</div>
+                                <div class="testimonial-info">
+                                    <h4>Camille Dubois</h4>
+                                    <div class="testimonial-date">Visité en Novembre 2025</div>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Très beau zoo avec une belle diversité d'animaux. Le spectacle des otaries est
+                                impressionnant ! Seul petit bémol : un peu d'attente au restaurant le midi.
+                                Mais dans l'ensemble, excellente sortie en famille.
+                            </p>
+                            <span class="testimonial-tag">Forfait Demi-journée</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card-carousel">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">TB</div>
+                                <div class="testimonial-info">
+                                    <h4>Thomas Bernard</h4>
+                                    <div class="testimonial-date">Visité en Octobre 2025</div>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Passionné de photographie animalière, j'ai pu prendre des clichés exceptionnels !
+                                Les animaux sont magnifiques et bien soignés. La section aquatique avec les requins
+                                est spectaculaire. Je recommande vivement !
+                            </p>
+                            <span class="testimonial-tag">Forfait 1 Jour</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card-carousel">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">EP</div>
+                                <div class="testimonial-info">
+                                    <h4>Émilie & Pierre</h4>
+                                    <div class="testimonial-date">Visité en Septembre 2025</div>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Nous avons célébré l'anniversaire de notre fille de 7 ans au zoo et c'était parfait !
+                                L'équipe a été aux petits soins, les animations sont adaptées aux enfants.
+                                Les girafes ont été la star de la journée. Merci pour ces souvenirs magiques !
+                            </p>
+                            <span class="testimonial-tag">Forfait 1 Jour</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card-carousel">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">JM</div>
+                                <div class="testimonial-info">
+                                    <h4>Julie Martinez</h4>
+                                    <div class="testimonial-date">Visité en Août 2025</div>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Une journée enrichissante et éducative ! Les panneaux explicatifs sont clairs et
+                                intéressants. J'ai particulièrement apprécié l'engagement du zoo pour la conservation
+                                des espèces. Parking gratuit et facilement accessible.
+                            </p>
+                            <span class="testimonial-tag">Forfait Demi-journée</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation du carrousel -->
+                <button class="testimonial-nav prev" onclick="moveTestimonial(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="testimonial-nav next" onclick="moveTestimonial(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Indicateurs -->
+                <div class="testimonial-indicators">
+                    <span class="testimonial-indicator active" onclick="goToTestimonial(0)"></span>
+                    <span class="testimonial-indicator" onclick="goToTestimonial(1)"></span>
+                    <span class="testimonial-indicator" onclick="goToTestimonial(2)"></span>
+                    <span class="testimonial-indicator" onclick="goToTestimonial(3)"></span>
+                    <span class="testimonial-indicator" onclick="goToTestimonial(4)"></span>
+                    <span class="testimonial-indicator" onclick="goToTestimonial(5)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informations Pratiques -->
+    <section class="info-pratiques" id="infos">
+        <div class="info-container">
+            <div class="section-title scroll-animation" style="grid-column: 1 / -1;">
+                <h2>Informations Pratiques</h2>
+                <p>Tout ce que vous devez savoir pour votre visite</p>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-clock"></i>
+                <h3>Horaires</h3>
+                <p><strong>Tous les jours</strong></p>
+                <p>9h00 - 18h00</p>
+                <p style="color: var(--success);">Ouvert toute l'année</p>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Adresse</h3>
+                <p><strong>Faune Royal</strong></p>
+                <p>60 Rue de la Faune</p>
+                <p>77220 Seine-et-Marne</p>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-phone"></i>
+                <h3>Contact</h3>
+                <p><strong>Téléphone</strong></p>
+                <p>+33 1 XX XX XX XX</p>
+                <p><strong>Email</strong></p>
+                <p>contact@fauneroyal.fr</p>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-parking"></i>
+                <h3>Parking</h3>
+                <p><strong>Parking gratuit</strong></p>
+                <p>500 places disponibles</p>
+                <p>Accessible PMR</p>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-wheelchair"></i>
+                <h3>Accessibilité</h3>
+                <p><strong>Site accessible PMR</strong></p>
+                <p>Chemins adaptés</p>
+                <p>Fauteuils roulants disponibles</p>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-paw"></i>
+                <h3>Animaux</h3>
+                <p><strong>Animaux de compagnie</strong></p>
+                <p>Non autorisés dans l'enceinte</p>
+                <p>Chenil gratuit disponible</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="./Images/logo_zoo.png" alt="Logo Faune Royal">
+                    <h4 style="margin: 0;">Faune Royal</h4>
+                </div>
+                <p style="color: var(--text-muted); line-height: 1.8;">
+                    Découvrez plus de 500 animaux majestueux dans un cadre exceptionnel.
+                    Une expérience unique pour toute la famille.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#forfaits">Forfaits</a></li>
+                    <li><a href="#infos">Infos pratiques</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="./Reservation/reservation.php">Réservation</a></li>
+                    <li><a href="./Connexion/connexion.html">Connexion</a></li>
+                    <li><a href="./Inscription/inscription.html">Inscription</a></li>
+                    <li><a href="#" onclick="openPlanModal(); return false;">Plan du parc</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 0.5rem;"></i> 60 Rue de la Faune, 77220</li>
+                    <li><i class="fas fa-phone" style="color: var(--primary); margin-right: 0.5rem;"></i> +33 1 XX XX XX XX</li>
+                    <li><i class="fas fa-envelope" style="color: var(--primary); margin-right: 0.5rem;"></i> contact@fauneroyal.fr</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Faune Royal. Tous droits réservés. | Mentions légales | Politique de confidentialité</p>
+        </div>
+    </footer>
+
+    <!-- Plan Modal -->
+    <div class="modal" id="planModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-map"></i> Plan du Parc Faune Royal</h2>
+                <button class="modal-close" onclick="closePlanModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="./Images/plan.jpg" alt="Plan du parc Faune Royal" id="planImage" onclick="toggleZoom()">
+            </div>
+            <p style="text-align: center; color: var(--text-muted); margin-top: 1rem; font-size: 0.9rem;">
+                <i class="fas fa-search-plus"></i> Cliquez sur l'image pour zoomer
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Carousel functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+
+        function updateCarousel() {
+            const track = document.getElementById('carouselTrack');
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+            // Update indicators
+            document.querySelectorAll('.carousel-indicator').forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function moveCarousel(direction) {
+            currentSlide += direction;
+            if (currentSlide < 0) currentSlide = totalSlides - 1;
+            if (currentSlide >= totalSlides) currentSlide = 0;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+
+        // Auto-play carousel
+        setInterval(() => {
+            moveCarousel(1);
+        }, 5000);
+
+        // Plan Modal functions
+        function openPlanModal() {
+            document.getElementById('planModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePlanModal() {
+            document.getElementById('planModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on outside click
+        document.getElementById('planModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePlanModal();
+            }
+        });
+
+        // Close modal on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closePlanModal();
+            }
+        });
+
+        // Zoom functionality for plan image
+        function toggleZoom() {
+            const img = document.getElementById('planImage');
+            img.classList.toggle('zoomed');
+
+            // Scroll to top when zooming in
+            if (img.classList.contains('zoomed')) {
+                document.querySelector('.modal-content').scrollTop = 0;
+            }
+        }
+
+        // ==========================================
+        // ANIMATIONS AU SCROLL
+        // ==========================================
+
+        // Fonction pour vérifier si un élément est visible dans le viewport
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + 100 &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Fonction pour animer les éléments au scroll
+        function handleScrollAnimations() {
+            const animatedElements = document.querySelectorAll('.scroll-animation, .scroll-fade-in, .scroll-slide-left, .scroll-slide-right');
+
+            animatedElements.forEach(element => {
+                if (isElementInViewport(element)) {
+                    element.classList.add('animate');
+                }
+            });
+        }
+
+        // Observer pour détecter les éléments visibles (alternative moderne)
+        if ('IntersectionObserver' in window) {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                        // Une fois animé, on peut arrêter d'observer cet élément
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Observer tous les éléments avec animation
+            document.addEventListener('DOMContentLoaded', () => {
+                const elementsToAnimate = document.querySelectorAll('.scroll-animation, .scroll-fade-in, .scroll-slide-left, .scroll-slide-right');
+                elementsToAnimate.forEach(el => observer.observe(el));
+            });
+        } else {
+            // Fallback pour les navigateurs plus anciens
+            window.addEventListener('scroll', handleScrollAnimations);
+            window.addEventListener('load', handleScrollAnimations);
+        }
+
+        // Animation initiale au chargement de la page
+        document.addEventListener('DOMContentLoaded', handleScrollAnimations);
+
+        // ==========================================
+        // CARROUSEL TÉMOIGNAGES
+        // ==========================================
+        let currentTestimonial = 0;
+        const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+        const totalTestimonials = testimonialSlides.length;
+        let testimonialAutoplayInterval;
+
+        function updateTestimonials() {
+            // Masquer tous les témoignages
+            testimonialSlides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+
+            // Afficher le témoignage actuel
+            testimonialSlides[currentTestimonial].classList.add('active');
+
+            // Mettre à jour les indicateurs
+            document.querySelectorAll('.testimonial-indicator').forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentTestimonial);
+            });
+        }
+
+        function moveTestimonial(direction) {
+            currentTestimonial += direction;
+
+            // Boucle infinie
+            if (currentTestimonial < 0) {
+                currentTestimonial = totalTestimonials - 1;
+            }
+            if (currentTestimonial >= totalTestimonials) {
+                currentTestimonial = 0;
+            }
+
+            updateTestimonials();
+            resetTestimonialAutoplay();
+        }
+
+        function goToTestimonial(index) {
+            currentTestimonial = index;
+            updateTestimonials();
+            resetTestimonialAutoplay();
+        }
+
+        function startTestimonialAutoplay() {
+            testimonialAutoplayInterval = setInterval(() => {
+                moveTestimonial(1);
+            }, 5000); // Changement automatique toutes les 5 secondes
+        }
+
+        function resetTestimonialAutoplay() {
+            clearInterval(testimonialAutoplayInterval);
+            startTestimonialAutoplay();
+        }
+
+        // Démarrer l'autoplay au chargement
+        document.addEventListener('DOMContentLoaded', () => {
+            startTestimonialAutoplay();
+        });
+
+        // Pause au survol
+        const carouselWrapper = document.querySelector('.testimonials-carousel-wrapper');
+        if (carouselWrapper) {
+            carouselWrapper.addEventListener('mouseenter', () => {
+                clearInterval(testimonialAutoplayInterval);
+            });
+
+            carouselWrapper.addEventListener('mouseleave', () => {
+                startTestimonialAutoplay();
+            });
+        }
+    </script>
+</body>
+</html>
